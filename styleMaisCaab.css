@@ -30,17 +30,19 @@ h1{text-align: center;}
 #tabela-equipes tr td:nth-child(2) {display: flex; justify-content: center; align-items: center;}
 #tabela-equipes img {width: 40px; border: 1px solid rgb(187, 187, 187);}
 
-.sec-boletins {background-color: red;}
-.sec-boletins {color: #000; height: 110vh; padding-top: 2rem;}
+.sec-boletins {background-color: var(--blue-light); color: #000; height: 110vh; padding-top: 2rem;}
 .sec-boletins h1 {padding: 2rem;}
-.sec-boletins table {width: 450px;margin: 2rem auto;border-collapse: collapse;}
-.sec-boletins table thead tr {border-bottom: 1px solid gray;}
+.sec-boletins table {width: 450px; margin: 2rem auto; border-collapse: collapse;}
+.sec-boletins table thead tr {border-bottom: 1px solid lightgray; background-color: #d3d3d3;}
+.sec-boletins table thead tr th {padding: 0.7rem;}
 .sec-boletins table tr {text-align: center;}
-.sec-boletins table tr:nth-child(even) {background-color: whitesmoke;}
+.sec-boletins table tbody tr:nth-child(even) {background-color: #d3d3d3;}
+.sec-boletins table tbody tr:nth-child(odd) {background-color: #fff;}
 .sec-boletins table td {padding: 0.5rem;}
 .sec-boletins img {width: 25px;cursor: pointer;}
 
 @media only screen and (max-width: 600px) {
 header .conteiner {flex-direction: column;}
 #tabela-equipes {font-size: 0.6rem; width: 95%;}
+.sec-boletins table {width: 80%; font-size: 0.6rem;}
 }
