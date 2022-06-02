@@ -1,7 +1,7 @@
 * {margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif;}
 body {background-image: url("images/foto-cover.jpg"); background-repeat: no-repeat; background-size: cover;background-position: left; color: white;height: 100vh;width: 100%;}
 :root {--blue: #27A9E1; --red: #EA0E61; --green: #95BF18; --gray: #666666; --blue-light: #59b9e1; --red-light: #f05490; --green-light: #b9c989; --gray-light: #a2a2a2;}
-.topo {position: fixed; bottom: 40px; right: 40px; cursor: pointer; color: #fff; width: 40px; height: 40px; border-radius: 50%; background-color: #EA0E61; font-size: 0.7rem; text-align: center; line-height: 40px; font-weight: 700;}
+.topo {position: fixed; bottom: 40px; right: 40px; cursor: pointer; color: #fff; width: 60px; height: 60px; border-radius: 50%; background-color: #EA0E61; font-size: 0.7rem; text-align: center; line-height: 60px; font-weight: 700;}
 .topo a {text-decoration: none; color: #fff;}
 
 header .conteiner {display: flex;}
@@ -20,15 +20,15 @@ h1{text-align: center;}
 
 .sec-equipes {margin-top: 110vh; color: #000;}
 
-#tabela-equipes {width: 70%; margin: 3rem auto; border-collapse: collapse;}
-#tabela-equipes th {background-color: var(--blue); color: white; font-weight: 500; padding: 0.3rem;}
-#tabela-equipes tr:nth-child(even) {background-color: rgb(208, 208, 208);}
-#tabela-equipes tr:hover {cursor: pointer;}
-#tabela-equipes tr td {padding: 0.6rem;}
-#tabela-equipes tr td:nth-child(1),
-#tabela-equipes tr td:nth-child(2) {text-align: center;}
-#tabela-equipes tr td:nth-child(2) {display: flex; justify-content: center; align-items: center;}
-#tabela-equipes img {width: 40px; border: 1px solid rgb(187, 187, 187);}
+#tabela-equipes, #tabela-desempenho {width: 70%; margin: 3rem auto; border-collapse: collapse; color: #000;}
+#tabela-equipes th, #tabela-desempenho th {background-color: var(--blue); color: white; font-weight: 500; padding: 0.3rem;}
+#tabela-equipes tr:nth-child(even), #tabela-desempenho tr:nth-child(even) {background-color: rgb(208, 208, 208);}
+#tabela-equipes tr:hover, #tabela-desempenho tr:hover {cursor: pointer;}
+#tabela-equipes tr td, #tabela-desempenho tr td {padding: 0.6rem;}
+#tabela-equipes tr td:nth-child(1), #tabela-equipes tr td:nth-child(2), #tabela-desempenho tr td:nth-child(1), #tabela-desempenho tr td:nth-child(2),
+#tabela-desempenho tr td:nth-child(3) {text-align: center;}
+#tabela-equipes tr td:nth-child(2), #tabela-desempenho tr td:nth-child(2) {display: flex; justify-content: center; align-items: center;}
+#tabela-equipes img, #tabela-desempenho img {width: 40px; border: 1px solid rgb(187, 187, 187);}
 
 .sec-boletins {background-color: var(--blue-light); color: #000; height: 110vh; padding-top: 2rem;}
 .sec-boletins h1 {padding: 2rem;}
@@ -40,6 +40,19 @@ h1{text-align: center;}
 .sec-boletins table tbody tr:nth-child(odd) {background-color: #fff;}
 .sec-boletins table td {padding: 0.5rem;}
 .sec-boletins img {width: 25px;cursor: pointer;}
+
+.sec-desempenho h1 {color: #000; text-align: center; margin-top: 2rem;}
+
+.sec-projeto {color: #fff; height: 50vh; background-color: var(--gray);}
+.sec-projeto h1 {padding: 2rem; color: #fff;}
+.sec-projeto .conteiner-content-projeto {display: flex; justify-content: space-evenly;}
+.sec-projeto .conteiner-content-projeto div {width: 30%; padding: 1rem; text-align: center; background-color: #fff}
+.sec-projeto .conteiner-content-projeto div a {text-decoration: none; color: #000; font-weight: 600; display: block;}
+
+footer {height: 50vh; background-color: var(--gray-light);}
+footer table {text-align: center; width: 100%; margin: auto; padding-top: 3rem;}
+footer table a {text-decoration: none; color: #000;}
+footer table a:hover {text-decoration: underline;}
 
 @media only screen and (max-width: 600px) {
 header .conteiner {flex-direction: column;}
