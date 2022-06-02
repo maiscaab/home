@@ -2,15 +2,15 @@
 body {
     background-image: url("images/foto-cover.jpg"); 
     /* background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.674)), url("images/foto-cover.jpg");  */
-    background-repeat: no-repeat; background-size: cover;background-position: center;color: white;height: 100vh;width: 100%;
+    background-repeat: no-repeat; background-size: cover;background-position: left; color: white;height: 100vh;width: 100%;
 }
 .topo {position: fixed; bottom: 40px; right: 40px; cursor: pointer; color: #fff; width: 40px; height: 40px; border-radius: 50%; background-color: #EA0E61; font-size: 0.7rem; text-align: center; line-height: 40px; font-weight: 700;}
 .topo a {text-decoration: none; color: #fff;}
 h1{text-align: center;}
 :root {--blue: #27A9E1; --red: #EA0E61; --green: #95BF18; --gray: #666666; --blue-light: #59b9e1; --red-light: #f05490; --green-light: #b9c989; --gray-light: #a2a2a2;}
-.conteiner {display: flex;}
-.conteiner div {text-align: center; color: #fff; padding: 0.5rem; font-weight: 600; cursor: pointer;}
-.conteiner a {text-decoration: none; display: block; color: #fff;}
+header .conteiner {display: flex;}
+header .conteiner div {text-align: center; color: #fff; padding: 0.5rem; font-weight: 600; cursor: pointer;}
+header .conteiner a {text-decoration: none; display: block; color: #fff;}
 #blue {background-color: var(--blue); flex: 1;}
 #green {background-color: var(--green); flex: 1;}
 #red {background-color: var(--red); flex: 1;}
@@ -19,8 +19,9 @@ h1{text-align: center;}
 #blue:hover {background-color: var(--blue-light);}
 #green:hover {background-color: var(--green-light);}
 #red:hover {background-color: var(--red-light);}
-#tabela-equipes {width: 70%;margin: auto;margin-top: 2.5rem;border-collapse: collapse;}
-#tabela-equipes th {background-color: var(--blue);color: white;font-weight: 500;padding: 0.3rem;}
+
+#tabela-equipes {width: 90%; margin: auto; margin-top: 2.5rem; border-collapse: collapse;}
+#tabela-equipes th {background-color: var(--blue); color: white; font-weight: 500; padding: 0.3rem;}
 #tabela-equipes tr:nth-child(even) {background-color: rgb(244, 244, 244);}
 #tabela-equipes tr:hover {cursor: pointer;}
 #tabela-equipes tr td {padding: 0.6rem;}
@@ -36,3 +37,9 @@ h1{text-align: center;}
 .sec-boletins table tr:nth-child(even) {background-color: whitesmoke;}
 .sec-boletins table td {padding: 0.5rem;}
 .sec-boletins img {width: 25px;cursor: pointer;}
+
+@media only screen and (max-width: 600px) {
+    header .conteiner {
+      
+    }
+  }
