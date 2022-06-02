@@ -40,6 +40,6 @@ header .conteiner a {text-decoration: none; display: block; color: #fff;}
 
 @media only screen and (max-width: 600px) {
     header .conteiner {
-      
+      flex-direction: column;
     }
   }
