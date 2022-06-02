@@ -1,16 +1,14 @@
-* {margin: 0;padding: 0;box-sizing: border-box;font-family: 'Poppins', sans-serif;}
-body {
-    background-image: url("images/foto-cover.jpg"); 
-    /* background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.674)), url("images/foto-cover.jpg");  */
-    background-repeat: no-repeat; background-size: cover;background-position: left; color: white;height: 100vh;width: 100%;
-}
+* {margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif;}
+body {background-image: url("images/foto-cover.jpg"); background-repeat: no-repeat; background-size: cover;background-position: left; color: white;height: 100vh;width: 100%;}
+:root {--blue: #27A9E1; --red: #EA0E61; --green: #95BF18; --gray: #666666; --blue-light: #59b9e1; --red-light: #f05490; --green-light: #b9c989; --gray-light: #a2a2a2;}
 .topo {position: fixed; bottom: 40px; right: 40px; cursor: pointer; color: #fff; width: 40px; height: 40px; border-radius: 50%; background-color: #EA0E61; font-size: 0.7rem; text-align: center; line-height: 40px; font-weight: 700;}
 .topo a {text-decoration: none; color: #fff;}
-h1{text-align: center;}
-:root {--blue: #27A9E1; --red: #EA0E61; --green: #95BF18; --gray: #666666; --blue-light: #59b9e1; --red-light: #f05490; --green-light: #b9c989; --gray-light: #a2a2a2;}
+
 header .conteiner {display: flex;}
 header .conteiner div {text-align: center; color: #fff; padding: 0.5rem; font-weight: 600; cursor: pointer;}
 header .conteiner a {text-decoration: none; display: block; color: #fff;}
+h1{text-align: center;}
+
 #blue {background-color: var(--blue); flex: 1;}
 #green {background-color: var(--green); flex: 1;}
 #red {background-color: var(--red); flex: 1;}
@@ -20,16 +18,20 @@ header .conteiner a {text-decoration: none; display: block; color: #fff;}
 #green:hover {background-color: var(--green-light);}
 #red:hover {background-color: var(--red-light);}
 
-#tabela-equipes {width: 90%; margin: auto; margin-top: 2.5rem; border-collapse: collapse;}
+.sec-equipes {margin-top: 110vh; color: #000;}
+
+#tabela-equipes {width: 70%; margin: 3rem auto; border-collapse: collapse;}
 #tabela-equipes th {background-color: var(--blue); color: white; font-weight: 500; padding: 0.3rem;}
-#tabela-equipes tr:nth-child(even) {background-color: rgb(244, 244, 244);}
+#tabela-equipes tr:nth-child(even) {background-color: rgb(208, 208, 208);}
 #tabela-equipes tr:hover {cursor: pointer;}
 #tabela-equipes tr td {padding: 0.6rem;}
 #tabela-equipes tr td:nth-child(1),
 #tabela-equipes tr td:nth-child(2) {text-align: center;}
 #tabela-equipes tr td:nth-child(2) {display: flex; justify-content: center; align-items: center;}
-#tabela-equipes img {width: 40px;border: 1px solid rgb(187, 187, 187);}
-.sec-boletins, .sec-equipes {margin-top: 100vh;color: #000;height: 110vh;padding-top: 2rem;}
+#tabela-equipes img {width: 40px; border: 1px solid rgb(187, 187, 187);}
+
+.sec-boletins {background-color: red;}
+.sec-boletins {color: #000; height: 110vh; padding-top: 2rem;}
 .sec-boletins h1 {padding: 2rem;}
 .sec-boletins table {width: 450px;margin: 2rem auto;border-collapse: collapse;}
 .sec-boletins table thead tr {border-bottom: 1px solid gray;}
@@ -39,7 +41,6 @@ header .conteiner a {text-decoration: none; display: block; color: #fff;}
 .sec-boletins img {width: 25px;cursor: pointer;}
 
 @media only screen and (max-width: 600px) {
-    header .conteiner {
-      flex-direction: column;
-    }
-  }
+header .conteiner {flex-direction: column;}
+#tabela-equipes {font-size: 0.6rem; width: 95%;}
+}
