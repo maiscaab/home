@@ -42,6 +42,7 @@ h1{text-align: center;}
 .sec-boletins img {width: 25px;cursor: pointer;}
 
 .sec-desempenho h1 {color: #000; text-align: center; margin-top: 2rem;}
+.sec-desempenho .band-pais {display: flex; flex-direction: column;}
 
 .sec-projeto {color: #fff; height: 50vh; background-color: var(--gray);}
 .sec-projeto h1 {padding: 2rem; color: #fff;}
@@ -56,6 +57,6 @@ footer table a:hover {text-decoration: underline;}
 
 @media only screen and (max-width: 600px) {
 header .conteiner {flex-direction: column;}
-#tabela-equipes {font-size: 0.6rem; width: 95%;}
+#tabela-equipes, #tabela-desempenho {font-size: 0.6rem; width: 95%;}
 .sec-boletins table {width: 80%; font-size: 0.6rem;}
 }
