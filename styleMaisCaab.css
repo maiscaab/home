@@ -42,6 +42,9 @@ h1{text-align: center;}
 
 .sec-desempenho h1 {color: #000; text-align: center; margin-top: 2rem;}
 .sec-desempenho .band-pais {display: flex; flex-direction: column;}
+.sec-desempenho tfoot {color: #000; background-color: #fff;}
+.sec-desempenho tfoot #td-tfoot {background-color: #fff; font-size: 0.7rem; text-align: left; padding: 0;}
+
 
 .sec-projeto {color: #fff; height: 50vh; background-color: var(--blue);}
 .sec-projeto h1 {padding: 2rem; color: #fff;}
@@ -53,7 +56,7 @@ footer {height: 50vh; background-color: whitesmoke;}
 footer table {text-align: center; width: 100%; margin: auto; padding-top: 3rem;}
 footer table a {text-decoration: none; color: #000;}
 footer table a:hover {text-decoration: underline;}
-footer table img {width: 180px; padding-top: 3rem;}
+footer table img {width: 180px; padding-top: 3rem; ;}
 
 @media only screen and (max-width: 600px) {
 body {background-position: center;}
