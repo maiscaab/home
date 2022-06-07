@@ -45,7 +45,6 @@ h1{text-align: center;}
 .sec-desempenho tfoot {color: #000; background-color: #fff;}
 .sec-desempenho tfoot #td-tfoot {background-color: #fff; font-size: 0.7rem; text-align: left; padding: 0;}
 
-
 .sec-projeto {color: #fff; height: 50vh; background-color: var(--blue);}
 .sec-projeto h1 {padding: 2rem; color: #fff;}
 .sec-projeto .conteiner-content-projeto {display: flex; justify-content: space-evenly;}
@@ -59,8 +58,8 @@ footer table a:hover {text-decoration: underline;}
 footer table img {width: 180px; padding-top: 3rem; ;}
 
 @media only screen and (max-width: 600px) {
-body {background-position: center;}
-header .conteiner {flex-direction: column;}
-#tabela-equipes, #tabela-desempenho {font-size: 0.6rem; width: 95%;}
-.sec-boletins table {width: 80%; font-size: 0.6rem;}
+    body {background-position: center;}
+    header .conteiner {flex-direction: column;}
+    #tabela-equipes, #tabela-desempenho {font-size: 0.6rem; width: 95%;}
+    .sec-boletins table {width: 80%; font-size: 0.6rem;}
 }
