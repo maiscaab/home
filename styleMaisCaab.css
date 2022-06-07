@@ -17,6 +17,12 @@ h1{text-align: center;}
 
 .menu:hover {color: #000;}
 
+.conteiner-logo {
+    height: 100vh;
+    background-image: url(images/foto-cover.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .conteiner-logo img {width: 100px; position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%); background-color: #fff; opacity: 0.9;}
 .sec-equipes {margin-top: 110vh; color: #000;}
 
