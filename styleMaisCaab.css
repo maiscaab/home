@@ -9,7 +9,7 @@ body {background-image: url("images/foto-cover.jpg"); background-repeat: no-repe
 /* (A) WRAPPER */
 #hamnav {
     width: 100%;
-    background: #000;
+    background: var(--blue);
   }
   
   /* (B) HORIZONTAL MENU ITEMS */
@@ -22,7 +22,7 @@ body {background-image: url("images/foto-cover.jpg"); background-repeat: no-repe
     text-decoration: none;
     text-align: center;
   }
-  #hamitems a:hover { background: #af0d0d; }
+  #hamitems a:hover { background: var(--red); }
   
   /* (C) HIDE HAMBURGER */
   #hamnav label, #hamburger { display: none; }
@@ -33,6 +33,16 @@ body {background-image: url("images/foto-cover.jpg"); background-repeat: no-repe
 #gray {background-color: var(--gray); flex: 1;}
 
 .menu:hover {color: #000;}
+
+#hamitems a:nth-child(1) {background-color: var(--blue);}
+#hamitems a:nth-child(2) {background-color: var(--red);}
+#hamitems a:nth-child(3) {background-color: var(--green);}
+#hamitems a:nth-child(4) {background-color: var(--gray);}
+
+#hamitems a:nth-child(1):hover {color: #000;}
+#hamitems a:nth-child(2):hover {color: #000;}
+#hamitems a:nth-child(3):hover {color: #000;}
+#hamitems a:nth-child(4):hover {color: #000;}
 
 .conteiner-logo {
     height: 100vh;
@@ -104,10 +114,14 @@ footer table img {width: 180px; padding-top: 3rem; ;}
     #hamnav label { 
       display: inline-block; 
       color: white;
-      background: #a02620;
+      background: var(--red);
       font-style: normal;
       font-size: 1.2em;
       padding: 10px;
+    }
+
+    #hamnav label:hover {
+      cursor: pointer;
     }
   
     /* (C) TOGGLE SHOW/HIDE MENU */
