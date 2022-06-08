@@ -13,18 +13,25 @@
 </head>
 
 <body>
-    <header>
-        <div class="conteiner" id="conteiner">
-            <div id="blue" ><a class="menu" href="#sec-equipes">Equipes</a></div>
-            <div id="red" ><a class="menu" href="#titulo-boletins">Boletins</a></div>
-            <div id="green" ><a class="menu" href="#sec-desempenho">Desempenho</a></div>
-            <div id="gray" ><a class="menu" href="#sec-projeto">Projeto</a></div>
-        </div>
-    </header>
+
+    <!-- (A) MENU WRAPPER -->
+<nav id="hamnav">
+    <!-- (B) THE HAMBURGER -->
+    <label for="hamburger">&#9776;</label>
+    <input type="checkbox" id="hamburger"/>
+   
+    <!-- (C) MENU ITEMS -->
+    <div id="hamitems">
+      <a href="#sec-equipes">Equipes</a>
+      <a href="#sec-boletins">Boletins</a>
+      <a href="#sec-desempenho">Desempenho</a>
+      <a href="#sec-projeto">Projeto</a>
+    </div>
+  </nav>
 
     <div class="conteiner-logo"><!-- <img src="images/logoMaisCaab.png" alt="logo"> --></div>
 
-    <div class="topo"><a href="#conteiner"><img src="images/upload.png"></a></div>
+    <div class="topo"><a href="#hamnav"><img src="images/upload.png"></a></div>
 
     <section class="sec-equipes" id="sec-equipes">
         <div class="conteiner-equipes">

@@ -5,10 +5,27 @@ body {background-image: url("images/foto-cover.jpg"); background-repeat: no-repe
 .topo a {text-decoration: none; color: #fff;}
 .topo img {width: 20px; padding-top: 9px; font-weight: 700;}
 
-header .conteiner {display: flex;}
-header .conteiner div {text-align: center; color: #fff; padding: 0.5rem; font-weight: 600; cursor: pointer;}
-header .conteiner a {text-decoration: none; display: block; color: #fff;}
-
+/* [ON BIG SCREEN] */
+/* (A) WRAPPER */
+#hamnav {
+    width: 100%;
+    background: #000;
+  }
+  
+  /* (B) HORIZONTAL MENU ITEMS */
+  #hamitems { display: flex; }
+  #hamitems a {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+  }
+  #hamitems a:hover { background: #af0d0d; }
+  
+  /* (C) HIDE HAMBURGER */
+  #hamnav label, #hamburger { display: none; }
 
 #blue {background-color: var(--blue); flex: 1;}
 #red {background-color: var(--red); flex: 1;}
@@ -66,9 +83,34 @@ footer table a {text-decoration: none; color: #000;}
 footer table a:hover {text-decoration: underline;}
 footer table img {width: 180px; padding-top: 3rem; ;}
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     body {background-position: center;}
     header .conteiner {flex-direction: column;}
     #tabela-equipes, #tabela-desempenho {font-size: 0.6rem; width: 95%;}
     .sec-boletins table {width: 80%; font-size: 0.6rem;}
 }
+
+/* [ON SMALL SCREENS] */
+@media screen and (max-width: 768px){
+    /* (A) BREAK INTO VERTICAL MENU */
+    #hamitems a {
+      box-sizing: border-box;
+      display: block;
+      width: 100%;
+      border-top: 1px solid #333;
+    }
+   
+    /* (B) SHOW HAMBURGER ICON */
+    #hamnav label { 
+      display: inline-block; 
+      color: white;
+      background: #a02620;
+      font-style: normal;
+      font-size: 1.2em;
+      padding: 10px;
+    }
+  
+    /* (C) TOGGLE SHOW/HIDE MENU */
+    #hamitems { display: none; }
+    #hamnav input:checked ~ #hamitems { display: block; }
+  }
