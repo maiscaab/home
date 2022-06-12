@@ -81,6 +81,7 @@ body {background-image: url("images/foto-cover.jpg"); background-repeat: no-repe
 .sec-desempenho .band-pais {display: flex; flex-direction: column;}
 .sec-desempenho tfoot {color: #000; background-color: #fff;}
 .sec-desempenho tfoot #td-tfoot {background-color: #fff; font-size: 0.7rem; text-align: left; padding: 0;}
+.sec-desempenho tbody tr td:nth-child(1) {font-size: 1.2rem;}
 .sec-desempenho tbody tr td:nth-child(3), .sec-desempenho tbody tr td:nth-child(4) {text-align: center;}
 .dados {display: flex; flex-direction: column; align-items: center;}
 .sec-desempenho .diamond {width: 20px; height: 20px; border-radius: 50%; background-color: #b9f2ff;}
@@ -95,11 +96,11 @@ body {background-image: url("images/foto-cover.jpg"); background-repeat: no-repe
 .sec-projeto .conteiner-content-projeto div {width: 30%; padding: 1rem; text-align: center; background-color: #fff}
 .sec-projeto .conteiner-content-projeto div a {text-decoration: none; color: #000; font-weight: 600; display: block;}
 
-footer {height: 50vh; background-color: whitesmoke;}
+footer {background-color: whitesmoke;}
 footer table {text-align: center; width: 100%; margin: auto; padding-top: 3rem;}
 footer table a {text-decoration: none; color: #000;}
 footer table a:hover {text-decoration: underline;}
-footer table img {width: 180px; padding-top: 3rem; ;}
+footer table img {width: 120px; padding-top: 3rem; ;}
 
 @media only screen and (max-width: 768px) {
     body {background-position: center;}
