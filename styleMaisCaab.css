@@ -58,12 +58,13 @@ body {background-image: url("images/foto-cover.jpg"); background-repeat: no-repe
 
 #tabela-equipes, #tabela-desempenho {width: 70%; margin: 3rem auto; border-collapse: collapse; color: #000;}
 #tabela-equipes th, #tabela-desempenho th {background-color: var(--blue); color: white; font-weight: 500; padding: 0.3rem;}
-#tabela-equipes tr:nth-child(even), #tabela-desempenho tr:nth-child(even) {background-color: rgb(208, 208, 208);}
+#tabela-equipes tr:nth-child(even) {background-color: rgb(208, 208, 208);}
 #tabela-equipes tr:hover, #tabela-desempenho tr:hover {cursor: pointer;}
 #tabela-equipes tr td, #tabela-desempenho tr td {padding: 0.6rem;}
 #tabela-equipes tr td:nth-child(1), #tabela-equipes tr td:nth-child(2), #tabela-desempenho tr td {text-align: center;}
 #tabela-equipes tr td:nth-child(2), #tabela-desempenho tr td:nth-child(2) {display: flex; justify-content: center; align-items: center;}
 #tabela-equipes img, #tabela-desempenho img {width: 40px; border: 1px solid rgb(187, 187, 187);}
+#tabela-desempenho tbody tr {border-bottom: 1px solid lightgray;}
 
 .sec-boletins {background-color: var(--blue-light); color: #000; height: 110vh; padding-top: 2rem;}
 .sec-boletins h1 {padding: 2rem; text-align: center;}
@@ -80,6 +81,13 @@ body {background-image: url("images/foto-cover.jpg"); background-repeat: no-repe
 .sec-desempenho .band-pais {display: flex; flex-direction: column;}
 .sec-desempenho tfoot {color: #000; background-color: #fff;}
 .sec-desempenho tfoot #td-tfoot {background-color: #fff; font-size: 0.7rem; text-align: left; padding: 0;}
+.sec-desempenho tbody tr td:nth-child(3), .sec-desempenho tbody tr td:nth-child(4) {text-align: center;}
+.dados {display: flex; flex-direction: column; align-items: center;}
+.sec-desempenho .diamond {width: 20px; height: 20px; border-radius: 50%; background-color: #b9f2ff;}
+.sec-desempenho .gold {width: 20px; height: 20px; border-radius: 50%; background-color: #FFD700;}
+.sec-desempenho .silver {width: 20px; height: 20px; border-radius: 50%; background-color: #C0C0C0;}
+.sec-desempenho .bronze {width: 20px; height: 20px; border-radius: 50%; background-color: #CD7F32;}
+.sec-desempenho .iron {width: 20px; height: 20px; border-radius: 50%; background-color: #61666A;}
 
 .sec-projeto {color: #fff; height: 50vh; background-color: var(--blue);}
 .sec-projeto h1 {padding: 2rem; color: #fff; text-align: center;}
