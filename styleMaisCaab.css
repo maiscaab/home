@@ -138,4 +138,4 @@ footer table img {width: 120px; padding-top: 3rem; ;}
     #hamnav input:checked ~ #hamitems { display: block; }
   }
 
-  sup {font-size: x-small;}
+  sup {font-size: x-small; color: #555;}
